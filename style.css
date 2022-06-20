@@ -1,0 +1,43 @@
+.btn {
+    font-family: "JetBrains Mono NL Light";
+    position: relative;
+}
+
+.text-1, .text-2 {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: -20% -20% -25px;
+    transition: all 0.2s;
+    padding: 20px;
+}
+
+.text-1{
+    transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    background-color: rgb(211, 0, 0);
+    color: #fff;
+}
+
+.text-2{
+    transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    background-color: rgb(121, 121, 253);
+    color: #131313;
+}
+
+.text-2 i{
+    margin-left: 15px;
+}
+
+.btn:hover .text-1{
+    transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+} 
+.btn:hover .text-2{
+    transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+}
